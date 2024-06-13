@@ -34,29 +34,29 @@ public class Ejecutor2 {
 
             System.out.print("Identificacion: ");
             String id = entrada.nextLine();
-            
+
             System.out.print("Edad: ");
             int edad = entrada.nextInt();
-            
+
             System.out.print("Costo de Creditos: ");
             double cred = entrada.nextDouble();
             System.out.print(" Numero de Creditos: ");
             int num = entrada.nextInt();
             entrada.nextLine();
-            System.out.print("¿Desea salir pusle S: ");
+            EstudiantePresencial estu = new EstudiantePresencial(nombre, apellido, id, edad, cred, num);
+            estu.calcularMatriculaPresencial();
+            System.out.printf("%s%s\n", cadena, estu);
+
+            System.out.print("Desea salir pusle S: ");
             String opcion = entrada.nextLine();
             if (opcion.equals("S")) {
                 bandera = false;
                 entrada.nextLine();
-          
-            } 
-            EstudiantePresencial estu = new EstudiantePresencial (nombre,apellido,id,edad,cred,num);
-            estu.calcularMatriculaPresencial(); 
-            System.out.print(estu);
-             
+
+            }
+
         }
 
-        
         System.out.printf("%s\n", cadena);
 
     }

@@ -51,7 +51,7 @@ public class EstudiantePresencial extends Estudiante{
         @Override
     public String toString(){
         String cadenaFinal = String.format("Costo Credito: %.2f\n"
-                + "Número de Crédito: %d\n"
+                + "Numero de Credito: %d\n"
                 + "Total Matricula: %.2f\n",
                 obtenerCostoCredito(),
                 obtenerNumeroCreditos(),
