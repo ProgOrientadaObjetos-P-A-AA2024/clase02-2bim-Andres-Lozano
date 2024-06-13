@@ -1,7 +1,8 @@
 
 package paquete2;
-
+// por que no hay un constructor de la Supercalse 
 public class EstudiantePresencial extends Estudiante{
+    
     
     /*1.  Declarar
         numeroCreditos: Entero 

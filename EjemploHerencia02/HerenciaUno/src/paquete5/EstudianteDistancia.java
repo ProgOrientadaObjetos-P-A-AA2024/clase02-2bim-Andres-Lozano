@@ -7,7 +7,7 @@ public class EstudianteDistancia extends Estudiante{
     double costoAsignatura;
     double matriculaDistancia;
     
-        
+        // se crea un obj de tipo EstudianteDistancia
     public EstudianteDistancia(String n, String ap, String iden, int e, 
             int numAsg, double costoAsg){
         super(n, ap, iden, e);

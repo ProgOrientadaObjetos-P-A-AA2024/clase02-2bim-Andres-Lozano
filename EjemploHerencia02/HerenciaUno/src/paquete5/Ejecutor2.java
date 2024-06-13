@@ -36,5 +36,6 @@ public class Ejecutor2 {
         presencial.calcularMatriculaPresencial();
         
         System.out.printf("%s\n", presencial);
+        
     }
 }

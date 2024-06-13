@@ -3,25 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete4;
+package paquete3;
 
-public class Ejecutor1 {
-
+/**
+ *
+ * @author reroes
+ */
+public class Ejecutor3 {
     public static void main(String[] args) {
-
+        
         // Creación de un objeto de tipo EstudianteDistancia
-        String nombre = "René";
+        
+        String nombre = "Rene";
         String apellido = "Elizalde";
         String identificacion = "110011";
         int edad = 36;
         
-        EstudianteDistancia estDistancia = new EstudianteDistancia(nombre,
+        EstudiantePresencial estudiante = new EstudiantePresencial(nombre, 
                 apellido, identificacion, edad);
+        estudiante.establecerCostoCredito(100.2);
+        estudiante.establecerNumeroCreditos(5);
+        estudiante.calcularMatriculaPresencial();
+       
         
-        estDistancia.establecerCostoAsignatura(50.5);
-        estDistancia.establecerNumeroAsginaturas(5);
-        estDistancia.calcularMatriculaDistancia();
+        System.out.println(estudiante);
+                
         
-        System.out.println(estDistancia);
     }
 }

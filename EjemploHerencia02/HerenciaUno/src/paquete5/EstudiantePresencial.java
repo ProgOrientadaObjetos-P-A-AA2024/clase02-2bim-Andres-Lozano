@@ -6,6 +6,9 @@ public class EstudiantePresencial extends Estudiante{
     int numeroCreditos;
     double costoCredito;
     double matriculaPresencial;
+   
+    
+    
     
     public EstudiantePresencial(String n, String ap, String iden, int ed, 
             int creditos, double costo){
@@ -50,7 +53,7 @@ public class EstudiantePresencial extends Estudiante{
         String cadenaFinal = String.format("%s", super.toString());
         
         cadenaFinal = String.format("%s\n"
-                + "Costo Crédito: %.2f\n"
+                + "Costo Credito: %.2f\n"
                 + "Número de Crédito: %d\n"
                 + "Total Matricula: %.2f\n",
                 cadenaFinal,
@@ -60,4 +63,6 @@ public class EstudiantePresencial extends Estudiante{
         
         return cadenaFinal;
     }
+   
 }
+

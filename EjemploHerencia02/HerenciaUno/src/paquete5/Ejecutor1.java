@@ -10,7 +10,7 @@ public class Ejecutor1 {
     public static void main(String[] args) {
 
         // Creación de un objeto de tipo EstudianteDistancia
-        String nombre = "René";
+        String nombre = "Rene";
         String apellido = "Elizalde";
         String identificacion = "110011";
         int edad = 36;

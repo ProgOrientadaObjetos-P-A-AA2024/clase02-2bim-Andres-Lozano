@@ -41,5 +41,29 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
-
+    /*
+    @Override
+     public String toString(){
+        String cadena = String.format("NombreEstudiante%s"
+                + "Numero de  Asignaturas%d"
+                + "valor de Asignatura %.2f"
+                + "Valor matricula%.2f",
+                obtenerNombresEstudiante(),
+                numeroAsignaturas,costoAsignatura,obtenerMatriculaDistancia());
+        
+        return cadena;
+    }
+*/
+    // Varia por que se llama diractamente al to String de la Supercalse 
+    @Override
+     public String toString(){
+        String cadena = String.format("%s\n"
+                + "Numero de  Asignaturas: %d\n"
+                + "valor de Asignatura:  %.2f\n"
+                + "Valor matricula: %.2f\n",
+                super.toString(),
+                numeroAsignaturas,costoAsignatura,obtenerMatriculaDistancia());
+        
+        return cadena;
+    }
 }
