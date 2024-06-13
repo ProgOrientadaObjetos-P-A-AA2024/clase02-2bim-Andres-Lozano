@@ -45,7 +45,7 @@ public class Ejecutor2 {
             entrada.nextLine();
             EstudiantePresencial estu = new EstudiantePresencial(nombre, apellido, id, edad, cred, num);
             estu.calcularMatriculaPresencial();
-            System.out.printf("%s%s\n", cadena, estu);
+            cadena=String.format("%s%s",cadena,estu);
 
             System.out.print("Desea salir pusle S: ");
             String opcion = entrada.nextLine();
